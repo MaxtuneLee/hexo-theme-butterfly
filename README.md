@@ -1,64 +1,53 @@
-<div align="right">
+<!-- <div align="right">
   Language:
   🇺🇸
   <a title="Chinese" href="/README_CN.md">🇨🇳</a>
-</div>
+</div> -->
+![qingyou-logo](https://wildbox.cn/images/icons/qingyoulogo.png)
+# hexo-theme-butterfly-qingyou
 
-# hexo-theme-butterfly
-
-![master version](https://img.shields.io/github/package-json/v/jerryc127/hexo-theme-butterfly/master?color=%231ab1ad&label=master)
-![master version](https://img.shields.io/github/package-json/v/jerryc127/hexo-theme-butterfly/dev?label=dev)
-![https://img.shields.io/npm/v/hexo-theme-butterfly?color=%09%23bf00ff](https://img.shields.io/npm/v/hexo-theme-butterfly?color=%09%23bf00ff)
+![master version](https://img.shields.io/github/package-json/v/maxtunelee/hexo-theme-butterfly-qingyou/master?color=%231ab1ad&label=master)
+![https://img.shields.io/npm/v/hexo-theme-butterfly?color=%09%23bf00ff](https://img.shields.io/npm/v/hexo-theme-butterfly-qingyou?color=%09%23bf00ff)
 ![hexo version](https://img.shields.io/badge/hexo-5.3.0+-0e83c)
-![license](https://img.shields.io/github/license/jerryc127/hexo-theme-butterfly?color=FF5531)
+![license](https://img.shields.io/github/license/maxtunelee/hexo-theme-butterfly-qingyou?color=FF5531)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/theme-butterfly-readme.png)
+本主题是根据青柚博客的个性化需求，基于 hexo-theme-butterfly 主题进行二次开发的，目前主要对PC Header 进行了修改。如果在使用过程中发现了问题可以在本仓库中提出 issue，感谢各位青柚小伙伴对青柚新官网开发的支持
 
-Demo: 👍 [Butterfly](https://butterfly.js.org/)  ||   🤞 [CrazyWong](https://crazywong.com/)
+开发文档: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
 
-Docs: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
+[hexo-theme-melody](https://github.com/jerryc127/hexo-theme-butterfly.git) 基于 [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) .
 
-Based on [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) theme.
-
-## 💻 Installation
+## 💻 安装主题
 
 ### GIT
-
-> If you are in Mainland China, you can download in [Gitee](https://gitee.com/immyw/hexo-theme-butterfly.git)
 
 Stable branch [recommend]:
 
 ```
-git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
-```
-
-Dev branch:
-
-```
-git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+git clone -b master https://github.com/maxtunelee/hexo-theme-butterfly-qingyou.git themes/butterfly
 ```
 
 ### NPM
 
 > It supports Hexo 5.0.0 or later
 
-In Hexo site root directory 
+进入Hexo的目录
 
 ```powershell
-npm i hexo-theme-butterfly
+npm i hexo-theme-butterfly-qingyou
 ```
 
-## ⚙ Configuration
+## ⚙ 配置主题
 
- Set theme in the hexo work folder's root config file `_config.yml`: 
+ 在 `_config.yml` 中设置使用的主题
 
 > theme: butterfly
 
- If you don't have pug & stylus renderer, try this: 
+ 如果你还没有 pug & stylus ，请用下面的命令安装一下: 
 
 > npm install hexo-renderer-pug hexo-renderer-stylus
 
-## 🎉 Features
+## 🎉 特性
 
 - [x] Card UI Design
 - [X] Support sub-menu
@@ -96,18 +85,3 @@ npm i hexo-theme-butterfly
 - [x] Justified Gallery
 - [x] Lazyload images
 - [x] Instantpage/Pangu/Snackbar notification toast/PWA......
-
-## ✨ Contributors
-
-<a href="https://github.com/jerryc127/hexo-theme-butterfly/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jerryc127/hexo-theme-butterfly" />
-</a>
-
-## 📷 Screenshots
-
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-1.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-2.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-3.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-4.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/theme-butterfly-readme-homepage-1.png)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/theme-butterfly-readme-homepage-2.png)
