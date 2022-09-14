@@ -1,0 +1,32 @@
+{
+  "name": "hexo-theme-butterfly-qingyou",
+  "version": "1.0.0",
+  "description": "Butterfly customized by qingyou",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "butterfly",
+    "Card UI Design",
+    "Jerry",
+    "hexo-theme-butterfly",
+    "qingyou"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxtunelee/hexo-theme-butterfly-qingyou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxtunelee/hexo-theme-butterfly-qingyou/issues",
+    "email": "max@xox.im"
+  },
+  "dependencies": {
+    "hexo-renderer-stylus": "^2.1.0",
+    "hexo-renderer-pug": "^3.0.0"
+  },
+  "author": "MaxtuneLee <max@xox.im>",
+  "license": "Apache-2.0"
+}
