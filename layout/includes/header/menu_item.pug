@@ -4,7 +4,7 @@ if theme.menu
       if typeof value !== 'object'
         .menus_item
           - const valueArray = value.split('||')
-          a.site-page(href=url_for(trim(valueArray[0])) target='_self')
+          a.site-page(href=trim(valueArray[0]) target='_self')
             if valueArray[1]
             span=' '+label
       else
@@ -19,6 +19,6 @@ if theme.menu
             each val,lab in value 
               - const valArray = val.split('||')
               li
-                a.site-page.child(href=url_for(trim(valArray[0])) target='_self')
+                a.site-page.child(href=trim(valArray[0]) target='_self')
                   if valArray[1]
                   span=' '+ lab
