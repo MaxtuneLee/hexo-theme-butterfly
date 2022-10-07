@@ -17,12 +17,13 @@ nav#nav
 
 div#mobile-nav
   div.mobile-nav-box
+    div#mobile-nav-pagename
+      a(href='/')='青柚博客'
+    div#site-logo-body
+      img#site-logo(href=url_for('/') src='https://wildbox.cn/images/icons/qingyoulogo.png')
     div#mobile-nav-box-menu-button
       div#mobile-nav-box-menu-button-before
       div#mobile-nav-box-menu-button-after
-    div#mobile-nav-pagename='青柚博客'
-    div#site-logo-body
-      img#site-logo(href=url_for('/') src='https://wildbox.cn/images/icons/qingyoulogo.png')
   div#mobile-nav-screen
     if theme.menu
     .menus_items
