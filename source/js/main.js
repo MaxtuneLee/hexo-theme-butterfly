@@ -8,11 +8,41 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.scrollTop;
     if (scrollTop) {
       document.getElementById('nav').style.backgroundColor='white'
+      document.getElementById('mobile-nav').style.backgroundColor='white'
     }else if (scrollTop===0){
       document.getElementById('nav').style.backgroundColor='rgba(0,0,0,0)'
+      document.getElementById('mobile-nav').style.backgroundColor='rgba(0,0,0,0)'
     }
   }
   window.addEventListener("scroll", handleScroll);
+  const mobileNav = ()=>{
+    const $mobileNavButtonBefore = document.getElementById('mobile-nav-box-menu-button-before')
+    const $mobileNavButtonAfter = document.getElementById('mobile-nav-box-menu-button-after')
+    const $mobileNavPageName = document.getElementById('mobile-nav-pagename')
+    const $siteLogo = document.getElementById('site-logo-body')
+    const $mobileNavScreen = document.getElementById('mobile-nav-screen')
+    const $pageHeader = document.getElementById('mobile-nav')
+    const $mobileNavCover = document.getElementById('mobile-page-header-cover')
+    console.log($mobileNavButtonAfter.classList)
+    if($mobileNavButtonAfter.classList.value!=='mobile-nav-box-menu-button-hover-after'){
+      $mobileNavButtonAfter.classList.add('mobile-nav-box-menu-button-hover-after')
+      $mobileNavButtonBefore.classList.add('mobile-nav-box-menu-button-hover-before')
+      $mobileNavPageName.classList.add('mobile-nav-pagename-hover')
+      $siteLogo.classList.add('site-logo-body-hover')
+      $mobileNavScreen.classList.add('mobile-nav-screen-hover')
+      $pageHeader.classList.add('mobile-page-header-hover')
+      $mobileNavCover.classList.add('mobile-page-header-cover-after')
+    }else{
+      $mobileNavScreen.classList.remove('mobile-nav-screen-hover')
+      $mobileNavButtonAfter.classList.remove('mobile-nav-box-menu-button-hover-after')
+      $mobileNavButtonBefore.classList.remove('mobile-nav-box-menu-button-hover-before')
+      $mobileNavPageName.classList.remove('mobile-nav-pagename-hover')
+      $siteLogo.classList.remove('site-logo-body-hover')
+      $pageHeader.classList.remove('mobile-page-header-hover')
+      $mobileNavCover.classList.remove('mobile-page-header-cover-after')
+    }
+  }
+  document.getElementById('mobile-nav-box-menu-button').addEventListener('click',mobileNav)
   const adjustMenu = (init) => {
     if (init) {
       blogNameWidth = document.getElementById('site-name').offsetWidth
