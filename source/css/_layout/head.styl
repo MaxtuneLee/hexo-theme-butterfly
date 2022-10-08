@@ -495,7 +495,9 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 1.2rem;
+    padding: 25px;
+    padding-top: 1.25rem;
+    padding-buttom: 1.25rem;
     z-index: 999;
     transition: all 0.5s ease;
     flex-direction: column;
@@ -503,7 +505,7 @@
 
     .mobile-nav-screen-hover {
       visibility: unset !important;
-      opacity: 1
+      opacity: 1;
     }
 
     .mobile-nav-box {
@@ -516,8 +518,9 @@
       // padding-right: 6vw;
       #mobile-nav-pagename {
         font-size: 20px;
-        a{
-          color: black
+
+        a {
+          color: black;
         }
       }
 
@@ -566,16 +569,16 @@
       }
 
       .mobile-nav-box-menu-button-hover-before {
-        top: 13px !important;
+        top: 13.5px !important;
         box-shadow: none !important;
-        -webkit-transform: rotate(225deg) !important;
-        transform: rotate(225deg) !important;
+        -webkit-transform: rotate(-45deg) !important;
+        transform: rotate(-45deg) !important;
       }
 
       .mobile-nav-box-menu-button-hover-after {
-        bottom: 13px !important;
-        -webkit-transform: rotate(135deg) !important;
-        transform: rotate(135deg) !important;
+        bottom: 13.5px !important;
+        -webkit-transform: rotate(45deg) !important;
+        transform: rotate(45deg) !important;
       }
     }
   }
@@ -585,26 +588,26 @@
   }
 
   #mobile-nav-screen {
-    visibility: hidden
-    opacity: 0
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.5s 0.5s;
     font-size: 20px;
     z-index: 9999;
-    margin-left: 34px;
-    margin-top: 105px;
+    margin-left: 5px;
+    margin-top: 50px;
 
     .menus_item {
       a.site-page {
         color: rgba(0, 0, 0, 0.4) !important;
       }
 
-      margin-bottom: 32px;
+      margin-bottom: 25px;
       z-index: 9999;
 
       &:nth-child(4) {
         a.site-page {
           color: black !important;
-          font-size: 25px;
+          font-size: 20px;
         }
 
         &:not(.child) {
@@ -631,9 +634,10 @@
   }
 }
 
-// .mobile-page-header-hover {
-// background: white !important;
-// }
+.mobile-page-header-hover {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
 #mobile-page-header-cover {
   position: fixed;
   top: 0;
@@ -642,7 +646,7 @@
   width: 100vw;
   z-index: 10;
   opacity: 0.9;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s 0.3s cubic-bezier(1, -0.2, 0.53, 1.22);
 }
 
 .mobile-page-header-cover-after {
